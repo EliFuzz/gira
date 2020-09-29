@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/options.css" />
+    <title>Gira</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="jira_host" placeholder="Jira Host (jira.com)" />
+
+      <br /><br />
+
+      <input type="text" id="git_host" placeholder="Git Host (gitlab.com)" />
+      <input type="text" id="git_token" placeholder="Git Token" />
+      <input
+        type="text"
+        id="git_projects"
+        placeholder="Git Projects as ID:Display Name (123:First Project,456:Second Project)"
+      />
+
+      <br /><br />
+
+      <input
+        type="text"
+        id="git_prefixBranchFrom"
+        placeholder="Git from branch prefix (Task:feature,Bug:bug)"
+      />
+      <input
+        type="text"
+        id="git_defaultBranchFrom"
+        placeholder="Git default from branch (master)"
+      />
+
+      <br /><br />
+
+      <input
+        type="text"
+        id="git_prefixBranchTo"
+        placeholder="Git to branch prefix (Task:feature,Bug:bug)"
+      />
+      <input
+        type="text"
+        id="git_defaultBranchTo"
+        placeholder="Git default to branch (master)"
+      />
+
+      <button type="submit" class="button">Save</button>
+    </div>
+    <script src="../lib/js/polyfill.min.js"></script>
+    <script src="../js/options.bundle.js"></script>
+  </body>
+</html>
